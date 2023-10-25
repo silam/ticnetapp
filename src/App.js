@@ -1,5 +1,14 @@
 import { useState } from "react";
 
+import awsExports from './aws-exports';
+
+
+import { Amplify, API, graphqlOperation } from 'aws-amplify'
+import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-amplify/ui-react';import '@aws-amplify/ui-react/styles.css';
+
+Amplify.configure(awsExports);
+
+
 function Square({value, onSquareClick})
 {
   //const [value, setValue] = useState(null);
