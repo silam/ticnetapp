@@ -1,10 +1,45 @@
-# Getting Started with Create React App
+# Getting Started with TicTacToe Online 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can create and build and deploy your application to AWS Amplify:
+
+
+### `npm install -g @aws-amplify/cli`
+
+### `amplify configure`
+
+### `npm start`
+
+### `amplify init`
+
+### `npm install aws-amplify`
+
+### `amplify add api`
+
+### `amplify push`
+
+### `amplify status`
+
+### `amplify console api`
+
+### `amplify mock api`
+
+### `amplify add auth`
+
+### `npm install @aws-amplify/ui-react`
+
+### `amplify add hosting`
+
+### `amplify publish`
+
+Run tictactoe online, go to https://dev.do0zcpr01vky8.amplifyapp.com
+
+
+
+
 
 ### `npm start`
 

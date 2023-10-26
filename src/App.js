@@ -1,11 +1,10 @@
-import { useState } from "react";
-
-import awsExports from './aws-exports';
-
-
+import React, { useEffect, useState } from 'react'
 import { Amplify, API, graphqlOperation } from 'aws-amplify'
+import { createTodo } from './graphql/mutations'
+import { listTodos } from './graphql/queries'
 import { withAuthenticator, Button, Heading, Text, TextField, View } from '@aws-amplify/ui-react';import '@aws-amplify/ui-react/styles.css';
 
+import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
 
@@ -24,7 +23,7 @@ function Square({value, onSquareClick})
         </button>);
 }
 
-export default function Board() {
+export default function Board({signOut, user}) {
 
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));

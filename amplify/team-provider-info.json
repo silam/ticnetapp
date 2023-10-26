@@ -20,6 +20,9 @@
           "appId": "do0zcpr01vky8",
           "type": "manual"
         }
+      },
+      "auth": {
+        "tictactoeneta57c0a05": {}
       }
     }
   }
